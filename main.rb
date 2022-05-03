@@ -3,9 +3,8 @@ def stock_picker(arr)
   max_diff = arr[1] - arr[1]
   until i == arr.length do
     for j in (i + 1)...arr.length
-      current_diff = arr[j] - arr[i]
-      if current_diff > max_diff
-        max_diff = current_diff
+      if arr[j] - arr[i] > max_diff
+        max_diff = arr[j] - arr[i]
         max_pair = [i, j]
       end
     end
